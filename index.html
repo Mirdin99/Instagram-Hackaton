@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <!-- Navbar menu -->
+        <div class="container">
+            <div class="nav-bar">
+
+                <div class="nav-left">
+                    <img src="./image/instagram-logo.png" alt="instagram-logo" class="insta-logo">
+                </div>
+                <div class="nav-right">
+                    <button class="btn-head">Главная</button>
+                    <button class="btn-add">Добавить</button>
+                        <input type="text" class="search">
+                        <button class="btn-search">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            
+                <div class="post-container">
+    
+                </div>
+        </div>
+
+        <div class="pagination">
+            <button class="previous-btn">prev</button>
+            <button class="next-btn">next</button>
+        </div>
+
+        <!-- Modal window -->
+        <div class="modal-post">
+            <div class="modal-postAdd">
+                <button class="btnClose-modal">X</button>
+                <h2>Add post</h2>
+                <div class="input-modal">
+                    <span>Введите название поста</span><br>
+                    <input type="text" class="name-modal"><br>
+                    <span>Загрузите изображение</span><br>
+                    <input type="url" class="img-modal"><br>
+                    <span>Напишите описание</span><br>
+                    <input type="text" class="opis-modal"> <br>
+                </div>
+                <button class="btn-addPost">Add</button>
+            </div>
+        </div>
+
+
+        <!-- Modal window Comment -->
+        <div class="modal-postBackground">
+            <div class="modal-postInfo">
+                
+            </div>
+        </div>
+
+
+        <!-- Modal window Edit -->
+        <div class="modal-postEdit">
+            <div class="modal-postEdit">
+                <button class="btnClose-modal">X</button>
+                <h2>Edit post</h2>
+                <div class="input-modal">
+                    <span>Введите название поста</span><br>
+                    <input type="text" class="name-modal" id ="modal-input"><br>
+                    <span>Напишите описание</span><br>
+                    <input type="text" class="opis-modal" id="modal-input"> <br>
+                </div>
+                <button class="btn-editPost">Save</button>
+            </div>
+        </div>
+        
+    </header>
+
+    
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

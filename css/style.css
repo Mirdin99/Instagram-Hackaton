@@ -1,0 +1,284 @@
+/* body{
+    margin:0;
+} */
+
+/* navbar  */
+
+/* .insta-logo{
+    width: 230px;
+    height: 90px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: cadetblue;
+    margin: 0;
+} */
+
+
+
+/* Modal window */
+
+/* .modal-post{
+    display: none;
+}
+
+
+#icon{
+    width: 20px;
+    border-radius: 3px;
+}
+
+table{
+    text-align: center;
+} */
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #fafafa;
+    margin:0;
+    font-family: 'Roboto', serif;
+}
+
+.insta-logo{
+    width: 150px;
+    height: 50px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    background-color: #fff;
+    margin: 0;
+}
+
+.nav-right{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px ;
+}
+button.btn-head{
+    height: 30px;
+    width: 110px;
+    border-radius: 4px;
+    border: 1px solid #fafafa;
+    background-color: #fafafa;
+    font-family: sans-serif;
+    cursor:pointer;
+}
+button.btn-add{
+    height: 30px;
+    width: 110px;
+    border-radius: 4px;
+    
+    border: 1px solid #fafafa;
+    background-color: #fafafa;
+    font-family: sans-serif;
+    cursor:pointer;
+}
+input.search{
+    height: 25px;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow:0 0 10px 1px #eeeef3;
+    border: 1px solid #dfdfdf;
+    border-bottom:1px solid #eee; 
+    cursor:pointer;
+    margin-top: 3px;
+    text-align: center;
+
+}
+button.btn-search{
+    height: 30px;
+    width: 110px;
+    border-radius: 4px;
+    border: 1px solid #eeeef3;
+    box-shadow:0 0 10px 1px rgba(0,0,0,0.06);
+    background-color:#fafafa ;
+    font-family: sans-serif;
+    cursor:pointer;
+}
+
+.main{
+    margin:0;
+    height: auto;
+    
+}
+
+
+.post-container{
+    width: 1400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+.post-item{
+    width: 400px;
+    height: 400px;
+}
+.postItemImg{
+    width: 400px;
+    height: 400px;
+}
+
+
+/* ======== modal window ===========*/
+
+.modal-post{
+    display: none;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-postAdd{
+    position: fixed;
+    text-align: center;
+    width: 700px;
+    height: auto;
+    /* margin-right: 50px; */
+    background-color: white;
+    opacity: 1.0;
+    top: 150px;
+    left: 550px;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.btnClose-modal{
+    background-color: rgba(146, 6, 6, 0.2); 
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+#modal-input{
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, sans-serif;
+    /* text-align: center; */
+}
+.opis-modal{
+    width: 300px;
+    height: auto;
+}
+
+.btn-addPost{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.reactions{
+    display: flex;
+    justify-content: space-between;
+}
+#icon{
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+
+/* modal */
+
+
+.modal-postBackground{
+    display: none;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.modal-postInfo{
+    margin-top: 3.5%;
+    margin-left: 15%;
+    background-color: white;
+    width: 900px;
+    height:500px;
+    display: flex;
+}
+
+.modal-left{
+    width: 50%;
+    height: 100%;
+}
+.postInfoImg{
+    width: 100%;
+    height: 500px;
+}
+
+.modal-right{
+    width: 50%;
+    
+}
+
+.opisInfo{
+    height: 30%;
+
+}
+
+.commentInfo{
+    height: 30%;
+}
+
+
+
+
+/* ======== modal window Edit ===========*/
+
+.modal-postEdit{
+    display: none;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-postEdit{
+    position: fixed;
+    text-align: center;
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    opacity: 1.0;
+    z-index: 2;
+    border-radius: 10px;
+    margin-top: 3.5%;
+    margin-left: 10%;
+}
+
+.btnClose-modal{
+    background-color: rgba(146, 6, 6, 0.2); 
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.opis-modal{
+    width: 300px;
+    height: auto;
+}
+
+.btn-editPost{
+    font-size: 18px;
+    margin-top: 10px;
+}
